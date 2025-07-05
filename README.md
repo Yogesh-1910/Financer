@@ -1,70 +1,173 @@
-# Getting Started with Create React App
+# Financier - AI-Powered Personal Finance Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Financier is a modern, full-stack web application designed to help users manage their finances effectively. It features a responsive React frontend and a powerful Python backend powered by a fine-tuned Phi-2 large language model (LLM). The application provides tools for budget tracking, loan management, stock monitoring, and an intelligent financial assistant named FinBot.
 
-## Available Scripts
+ <!-- Replace with a good screenshot of your app's dashboard -->
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+-   **Secure Authentication:** User sign-up and login system.
+-   **Dashboard Overview:** A central hub displaying user profile details and the latest financial news.
+-   **Budget Manager:** An Excel-like interface to track monthly income and expenses, with automatic calculations for savings.
+-   **Loan & EMI Tracker:** A tool to monitor loans and Equated Monthly Installments (EMIs).
+-   **Stock Monitor:** Real-time stock price tracking with interactive charts for selected symbols (powered by Finnhub API).
+-   **🤖 AI FinBot:**
+    -   A specialized financial chatbot powered by a fine-tuned Microsoft Phi-2 model.
+    -   Answers general financial questions concisely and accurately.
+    -   Refuses to answer non-financial queries.
+    -   **Excel Budget Analyzer:** Users can upload their budget spreadsheet, and FinBot will provide a summary and actionable financial advice.
+-   **🎤 Voice Assistant:** Supports voice commands and can speak AI responses (using Web Speech API).
+-   **Responsive Design:** Clean and professional UI that works on both desktop and mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+**Frontend:**
+-   **React:** A JavaScript library for building user interfaces.
+-   **React Router:** For client-side routing.
+-   **CSS Modules:** For component-scoped styling.
+-   **Chart.js / react-chartjs-2:** For rendering stock charts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Backend (LLM & API):**
+-   **Python:** The core language for the backend.
+-   **FastAPI:** A modern, high-performance web framework for building APIs.
+-   **PyTorch:** The deep learning framework used for the LLM.
+-   **Hugging Face Transformers:** For loading and working with the Phi-2 model.
+-   **Hugging Face PEFT (LoRA/QLoRA):** For parameter-efficient fine-tuning.
+-   **Hugging Face TRL:** For supervised fine-tuning (`SFTTrainer`).
+-   **Pandas & Openpyxl:** For parsing and analyzing uploaded Excel files.
+-   **Uvicorn:** An ASGI server for running FastAPI.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these instructions to set up and run the project locally. You will need to run the backend server and the frontend application in separate terminal windows.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+-   **Node.js and npm** (or yarn) for the frontend.
+-   **Python 3.8+** and `pip` for the backend.
+-   **Git** for cloning the repository.
+-   An **NVIDIA GPU with CUDA** is highly recommended for running the LLM backend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend Setup (LLM & API Server)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/financier.git
+    cd financier
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2.  **Navigate to the backend directory:**
+    ```bash
+    cd finance-manager-backend/llm # Adjust path as per your structure
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.  **Create and activate a Python virtual environment:**
+    ```bash
+    python -m venv venv_backend
+    # On Windows:
+    venv_backend\Scripts\activate
+    # On macOS/Linux:
+    source venv_backend/bin/activate
+    ```
 
-## Learn More
+4.  **Install Python dependencies:**
+    *It's recommended to install PyTorch first, matching your system's CUDA version.*
+    ```bash
+    # Example for CUDA 11.8. Check PyTorch website for your version.
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    # Install other dependencies
+    pip install transformers datasets accelerate bitsandbytes sentencepiece peft trl
+    pip install fastapi uvicorn python-multipart pandas openpyxl
+    pip install tensorboard # For monitoring training
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5.  **Fine-tune the Phi-2 Model (One-time setup):**
+    *   **Prepare your dataset:** Create a `finance_qa.json` file in the `llm` directory. This file should contain a list of instruction-output pairs for training the model on financial Q&A.
+    *   **Run the fine-tuning script:**
+        ```bash
+        python fine_tune_phi2_finance.py
+        ```
+    *   This will create a folder (e.g., `phi2-finance-results/final_phi2_finance_adapters`) containing the fine-tuned LoRA adapter weights. Ensure the `adapter_model_path` in `main_api.py` points to this directory.
 
-### Code Splitting
+6.  **Start the Backend API Server:**
+    ```bash
+    uvicorn main_api:app --reload --host 0.0.0.0 --port 8000
+    ```
+    *   The backend server should now be running. Check the terminal for "LLM Model and Tokenizer loaded successfully." and "Uvicorn running on http://0.0.0.0:8000".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Frontend Setup
 
-### Analyzing the Bundle Size
+1.  **Open a new terminal window.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2.  **Navigate to the frontend project root:**
+    ```bash
+    cd path/to/your/project/ # The folder containing src, public, package.json
+    ```
 
-### Making a Progressive Web App
+3.  **Install Node.js dependencies:**
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4.  **Set up API Keys:**
+    *   **Stock API:** Get a free API key from [Finnhub.io](https://finnhub.io/dashboard). Open `src/api/stockService.js` and replace `'YOUR_FINNHUB_API_KEY'` with your actual key.
+    *   **Financial News API:** Get a free API key from [NewsAPI.org](https://newsapi.org/). Open `src/api/newsService.js` and replace `'YOUR_NEWS_API_KEY'` with your key.
 
-### Advanced Configuration
+5.  **Start the React Development Server:**
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+6.  **Access the Application:**
+    *   Open your browser and navigate to `http://localhost:3000`. You should now see the Financier login page.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 Usage
 
-### `npm run build` fails to minify
+-   **Sign Up / Login:** Create an account or log in to access the dashboard.
+-   **AI FinBot:**
+    -   Ask general financial questions in the chat input.
+    -   Click "Analyze Your Budget Excel", choose an Excel file with your budget details, and click "Analyze Selected Excel" to get a summary and AI-powered suggestions.
+-   **Other Modules:** Navigate via the sidebar to access the Budget Manager, Loan & EMI Tracker, and Stock Monitor.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Folder Structure
+
+financier/
+```
+financier/
+├── finance-manager-backend/
+│   └── llm/
+│       ├── fine_tune_phi2_finance.py    # Script for fine-tuning
+│       ├── main_api.py                  # FastAPI backend server
+│       ├── test_finetuned_model.py      # Script to test model locally
+│       ├── finance_qa.json              # Your training dataset
+│       └── phi2-finance-results/        # Output directory for adapters
+├── src/                                 # React frontend source
+│   ├── api/                             # API service calls (LLM, Stocks, News)
+│   ├── components/                      # Reusable React components
+│   ├── contexts/                        # React contexts (e.g., AuthContext)
+│   ├── pages/                           # Page-level components
+│   ├── App.js                           # Main app component and router
+│   └── ...
+├── public/
+├── package.json
+└── README.md
+```
+
+## 💻Developers
+**Yogesh S** -
+https://github.com/Yogesh-1910
+
+**Danush G** - 
+https://github.com/Danush6123
+
+**Hemanth P** -
+https://github.com/Hemanth-0013
