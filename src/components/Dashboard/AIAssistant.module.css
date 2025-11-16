@@ -1,118 +1,197 @@
 /* src/components/Dashboard/AIAssistant.module.css */
 
-/* Define the background color for these specific boxes if not already a global variable in index.css */
-/* If --ai-box-background is already in index.css, you can remove this :root block */
-:root { 
-  --ai-box-background: #000000; /* Matching disabled input background from your Profile page */
+:root {
+  --bg-dark: #1e2833;
+  --bg-darker: #16202a;
+  --accent: #27c9a9;
+  --text-primary: #e9f1f6;
+  --text-secondary: #9ab0c4;
+  --bubble-ai: #2d3b4c;
+  --bubble-user: #22b07d;
 }
 
-
-.aiAssistantCard {
+/* MAIN ROOT */
+.AIWrapper {
   display: flex;
   flex-direction: column;
-  height: 75vh; 
-  max-height: 700px;
-  min-height: 400px;
-  /* The Card component itself will use var(--surface-color) for its background from Card.module.css */
-  /* We want the elements inside this card to have the specific "profile field" style */
+  gap: 22px;
+  padding: 20px;
+
+  height: calc(100vh - 80px);
+  overflow: auto;
+  background-color: var(--bg-dark);
 }
 
-/* Chat Window where messages appear */
+/* CHAT SECTION */
+.chatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  background: var(--bg-darker);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+}
+
 .chatWindow {
-  flex-grow: 1;
+  flex: 1;
   overflow-y: auto;
-  padding: 15px;
-  margin-bottom: 15px;
-  
-  /* --- STYLE LIKE PROFILE DISPLAY FIELDS --- */
-  background-color: var(--ai-chat-box-bg, #1c2b36); /* Dark desaturated blue/teal background */
-  border: 1px solid var(--ai-chat-box-border-color, var(--primary-color)); /* Green border (or your chosen border color) */
-  border-radius: 8px; /* Match profile field rounding */
-  
+
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  padding-right: 6px;
 }
 
-/* Individual Message Bubbles - these should contrast with the chat window background */
-.messageBubble {
-  padding: 10px 15px;
+/* BUBBLES */
+.bubble {
+  max-width: 70%;
+  padding: 12px 16px;
   border-radius: 18px;
-  max-width: 75%;
-  word-wrap: break-word;
-  line-height: 1.5;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-  color: var(--text-color); 
+  line-height: 1.45;
+  font-size: 0.92rem;
 }
 
-.user { /* User's message bubble */
-  background-color: var(--primary-color); /* Green background */
-  color: var(--text-on-primary); /* White text */
+.user {
+  background: var(--bubble-user);
+  color: #fff;
   margin-left: auto;
   border-bottom-right-radius: 6px;
 }
 
-.ai { /* AI's message bubble */
-  /* Make AI bubbles distinct from the chat window's new background */
-  background-color: var(--ai-bubble-surface, #2a3b4d); /* A different dark shade */
-  color: var(--text-color);
+.ai {
+  background: var(--bubble-ai);
+  color: var(--text-primary);
   margin-right: auto;
   border-bottom-left-radius: 6px;
 }
-.ai i { 
-    color: var(--text-secondary-dark-theme);
+
+.listening {
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-
-/* Input Area at the bottom */
-.inputArea {
+/* INPUT BAR */
+.inputBar {
   display: flex;
   gap: 10px;
-  align-items: stretch; 
-  /* The Input component for "Ask FinBot..." will get its style from Input.module.css.
-     We need to ensure Input.module.css provides the "profile field" look for active inputs. */
-}
-.inputArea > div { /* Target Input component's wrapper */
-  flex-grow: 1;
-  margin-bottom: 0;
+  align-items: stretch;
 }
 
-/* Send and Voice Buttons styling comes from Button.module.css */
-.sendButton, .voiceButton { /* ... (Keep existing size/shape styles) ... */ }
-.listeningPulse { /* ... (Keep existing) ... */ }
-@keyframes pulse { /* ... (Keep existing) ... */ }
-.voiceErrorMessage { /* ... (Keep existing) ... */ }
-
-/* Options like "Speak AI Responses" */
-.chatOptions {
-  margin-top: 10px; /* Add space between input and this option */
-  padding: 0; /* Remove padding if input area itself has no distinct background */
+.speakOption {
+  color: var(--text-secondary);
   font-size: 0.9rem;
+}
+
+.voiceError {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+}
+
+/* EXCEL SECTION */
+.excelSection {
+  background: var(--bg-darker);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--accent);
+}
+
+.excelSection h3 {
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+/* File input */
+.fileInputRow {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: var(--text-secondary-dark-theme);
+  background: #2a3b4d;
+  border: 1px solid var(--text-secondary);
+  border-radius: 6px;
+  margin-bottom: 12px;
 }
-.chatOptions input[type="checkbox"] { /* ... (Keep existing) ... */ }
 
+.fileInput {
+  display: none;
+}
 
-/* Note at the bottom */
-.llmNote {
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 12px;
+.fileLabel {
+  flex-grow: 1;
+  padding: 10px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.clearFile {
+  color: #ff4b4b;
+  background: none;
+  border: none;
+  padding: 0 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fileError {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.analysisResult {
+  margin-top: 18px;
+  background: rgba(255,255,255,0.05);
+  padding: 14px;
   border-radius: 8px;
-  margin-top: 20px;
-
-  /* --- STYLE LIKE PROFILE DISPLAY FIELDS --- */
-  background-color: var(--ai-chat-box-bg, #1c2b36); 
-  color: var(--text-secondary-dark-theme);
-  border: 1px solid var(--ai-chat-box-border-color, var(--primary-color)); 
 }
-.llmNote code {
-    background-color: var(--border-color-dark-theme); 
-    color: var(--text-color);
-    padding: 2px 5px;
-    border-radius: 4px;
-    font-size: 0.9em;
+
+.analysisResult h4 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.summary {
+  background: black;
+  padding: 12px;
+  border-radius: 6px;
+  color: var(--text-primary);
+  max-height: 150px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.suggestionList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.suggestionList li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.suggestionList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.errorBox {
+  background: rgba(255,0,0,0.2);
+  padding: 10px;
+  border-radius: 6px;
+  color: #ffb3b3;
+}
+
+/* FOOTER NOTE */
+.footerNote {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 10px;
 }

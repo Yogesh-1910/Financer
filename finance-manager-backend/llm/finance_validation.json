@@ -1,0 +1,502 @@
+[
+  {
+    "instruction": "What are 'microeconomics' and 'macroeconomics'?",
+    "input": "",
+    "output": "Microeconomics is the study of decisions made by people and businesses regarding the allocation of resources and prices of goods and services. Macroeconomics, on the other hand, is the field of economics that studies the behavior of the economy as a whole, focusing on phenomena like GDP, inflation, unemployment, and economic growth."
+  },
+  {
+    "instruction": "Explain SIP in simple terms.",
+    "input": "",
+    "output": "A SIP, or Systematic Investment Plan, is like a recurring deposit for mutual funds. You invest a small, fixed amount regularly, like every month, which helps you build wealth over the long term without having to invest a large sum at once."
+  },
+  {
+    "instruction": "What are the benefits of a SIP?",
+    "input": "",
+    "output": "The main benefits of a SIP are: 1. Rupee Cost Averaging, which reduces the impact of market volatility. 2. The Power of Compounding, where your earnings also start to earn returns. 3. Disciplined Investing, as it automates your savings. 4. Accessibility, allowing you to start with a small amount."
+  },
+  {
+    "instruction": "Translate 'hello' into Spanish.",
+    "input": "",
+    "output": "I am a financial assistant, not a translation service. My capabilities are focused on finance."
+  },
+  {
+    "instruction": "What is 'deflation'?",
+    "input": "",
+    "output": "Deflation is a general decline in prices for goods and services, typically associated with a contraction in the supply of money and credit in the economy. During deflation, the purchasing power of currency rises over time. While falling prices might seem good, deflation can be harmful as it discourages spending and can lead to a recession."
+  },
+  {
+    "instruction": "What is 'Keynesian economics'?",
+    "input": "",
+    "output": "Keynesian economics is a macroeconomic theory based on the ideas of 20th-century British economist John Maynard Keynes. The theory advocates for increased government expenditures and lower taxes to stimulate demand and pull the global economy out of a recession."
+  },
+  {
+    "instruction": "What is a 401(k)?",
+    "input": "",
+    "output": "A 401(k) is a retirement savings plan sponsored by an employer in the United States. It lets workers save and invest a piece of their paycheck before taxes are taken out. Taxes are not paid on the money until it is withdrawn from the account."
+  },
+  {
+    "instruction": "How many planets are in our solar system?",
+    "input": "",
+    "output": "I am a specialized financial assistant. I do not have information about astronomy or space."
+  },
+  {
+    "instruction": "What is a 'credit union'?",
+    "input": "",
+    "output": "A credit union is a non-profit financial cooperative owned and controlled by its members. Credit unions offer similar services to banks, such as savings and checking accounts, loans, and credit cards, but often provide better interest rates and lower fees because they are not focused on maximizing profits for shareholders."
+  },
+  {
+    "instruction": "What is the best type of dog for a small apartment?",
+    "input": "",
+    "output": "I can only provide information on financial matters. I am unable to give advice on choosing a pet."
+  },
+  {
+    "instruction": "What is a '529 Plan'?",
+    "input": "",
+    "output": "A 529 plan is a tax-advantaged savings plan designed to encourage saving for future education costs. Sponsored by states, state agencies, or educational institutions, these plans are named after Section 529 of the Internal Revenue Code. Withdrawals for qualified education expenses are typically tax-free."
+  },
+  {
+    "instruction": "What is 'beta' in stock market terms?",
+    "input": "",
+    "output": "Beta is a measure of a stock's volatility in relation to the overall market. The market has a beta of 1.0. A stock with a beta greater than 1.0 is more volatile than the market, while a stock with a beta less than 1.0 is less volatile. It's a key component of the Capital Asset Pricing Model (CAPM)."
+  },
+  {
+    "instruction": "Summarize the plot of the movie 'Inception'.",
+    "input": "",
+    "output": "I do not have information about movies or entertainment. My purpose is to assist with financial questions."
+  },
+  {
+    "instruction": "What is a 'venture capital' fund?",
+    "input": "",
+    "output": "Venture capital (VC) is a form of private equity financing that is provided by venture capital firms or funds to startups, early-stage, and emerging companies that have been deemed to have high growth potential or which have demonstrated high growth. VCs take on high risk for the potential of high returns."
+  },
+  {
+    "instruction": "What is a 'Series A, B, C' funding?",
+    "input": "",
+    "output": "Series A, B, and C are names for different rounds of venture capital financing for a startup. Series A is typically the first round of institutional venture capital funding. Series B is the second round, focused on scaling the business. Series C and subsequent rounds are for further expansion, market development, or acquisition."
+  },
+  {
+    "instruction": "What is 'Laissez-faire' economics?",
+    "input": "",
+    "output": "Laissez-faire is an economic theory from the 18th century that opposes any government intervention in business affairs. The driving principle behind laissez-faire is that the less the government is involved in the economy, the better off business will be, and by extension, society as a whole."
+  },
+  {
+    "instruction": "What is 'accredited investor'?",
+    "input": "",
+    "output": "An accredited investor is an individual or a business entity that is allowed to deal in securities that may not be registered with financial authorities. They are entitled to this privileged access by satisfying certain requirements regarding income, net worth, asset size, governance status or professional experience. The rules for being an accredited investor are designed to protect less sophisticated investors from high-risk investments."
+  },
+  {
+    "instruction": "What is 'short selling' a stock?",
+    "input": "",
+    "output": "Short selling is an investment or trading strategy that speculates on the decline in a stock or other security's price. A short seller borrows shares and immediately sells them, hoping to buy them back later at a lower price, return the borrowed shares, and pocket the difference."
+  },
+  {
+    "instruction": "What is a 'carried interest'?",
+    "input": "",
+    "output": "Carried interest is a share of any profits that the general partners of private equity and hedge funds receive as compensation, regardless of whether they contribute any initial funds. It is a performance fee, designed to incentivize fund managers to achieve high returns."
+  },
+  {
+    "instruction": "What is a 'golden parachute'?",
+    "input": "",
+    "output": "A 'golden parachute' is a large payment or other financial compensation guaranteed to a company executive should the executive be dismissed as a result of a merger or takeover. They are often used to attract top executive talent."
+  },
+  {
+    "instruction": "What is 'sovereign debt'?",
+    "input": "",
+    "output": "Sovereign debt is the total amount of money that a country's government has borrowed. Governments borrow money by issuing securities such as government bonds. A country's ability to repay its sovereign debt is a key indicator of its economic health."
+  },
+  {
+    "instruction": "What is the 'International Monetary Fund' (IMF)?",
+    "input": "",
+    "output": "The International Monetary Fund (IMF) is an international organization that promotes global economic growth and financial stability, encourages international trade, and reduces poverty. It provides policy advice and financing to its members in economic difficulty and also works with developing nations to help them achieve macroeconomic stability."
+  },
+  {
+    "instruction": "What is quantitative easing?",
+    "input": "",
+    "output": "Quantitative easing (QE) is a monetary policy strategy used by central banks to increase the money supply and encourage lending and investment. The central bank buys securities, such as government bonds, from the open market in order to increase the money supply and lower interest rates."
+  },
+  {
+    "instruction": "What is 'alpha' in investing?",
+    "input": "",
+    "output": "Alpha is a term used in investing to describe a strategy's ability to beat the market, or its 'edge.' Alpha is thus also often referred to as 'excess return' or 'abnormal rate of return,' which is the return that a portfolio manager earns above a certain benchmark."
+  },
+  {
+    "instruction": "What is 'financial literacy'?",
+    "input": "",
+    "output": "Financial literacy is the possession of the set of skills and knowledge that allows an individual to make informed and effective decisions with all of their financial resources. It includes understanding concepts like budgeting, saving, investing, and debt management."
+  },
+  {
+    "instruction": "What is the 'World Bank'?",
+    "input": "",
+    "output": "The World Bank is an international financial institution that provides loans and grants to the governments of low- and middle-income countries for the purpose of pursuing capital projects. Its official goal is the reduction of poverty."
+  },
+  {
+    "instruction": "What is a 'moat' in business?",
+    "input": "",
+    "output": "In business, a 'moat' refers to a company's ability to maintain competitive advantages over its competitors in order to protect its long-term profits and market share from competing firms. The term was popularized by investor Warren Buffett. Examples of moats include brand identity, patents, and high switching costs."
+  },
+  {
+    "instruction": "What is an 'active investment' strategy?",
+    "input": "",
+    "output": "Active investing is a hands-on approach to investing where a portfolio manager makes specific investments with the goal of outperforming an investment benchmark index. Active managers rely on analysis, research, and their own judgment to decide which securities to buy, hold, and sell."
+  },
+  {
+    "instruction": "What is a balance sheet?",
+    "input": "",
+    "output": "A balance sheet is a financial statement that reports a company's assets, liabilities, and shareholder equity at a specific point in time. It provides a snapshot of what a company owns and owes, as well as the amount invested by shareholders. It is based on the fundamental equation: Assets = Liabilities + Equity."
+  },
+  {
+    "instruction": "What is a good credit utilization ratio?",
+    "input": "",
+    "output": "A good credit utilization ratio is generally considered to be below 30%. This ratio is the amount of revolving credit you're using divided by the total amount of revolving credit you have available. Keeping it low shows lenders you're not over-reliant on credit."
+  },
+  {
+    "instruction": "What is 'EBITDA'?",
+    "input": "",
+    "output": "EBITDA stands for Earnings Before Interest, Taxes, Depreciation, and Amortization. It is a measure of a company's overall financial performance and is used as an alternative to net income in some circumstances. It provides a clearer picture of a company's operating profitability."
+  },
+  {
+    "instruction": "What is 'leverage' in finance?",
+    "input": "",
+    "output": "Leverage involves borrowing money to invest in an asset. The goal is that the income or capital gain from the investment will be more than the cost of borrowing. While leverage can amplify profits, it can also amplify losses significantly."
+  },
+  {
+    "instruction": "What is a 'furlough'?",
+    "input": "",
+    "output": "A furlough is a temporary leave of absence from work that is unpaid. Unlike a layoff, a furlough is not a permanent termination of employment. Employees are expected to return to their job once the furlough period is over. It is often used by companies as a cost-saving measure."
+  },
+  {
+    "instruction": "What is the debt-snowball method?",
+    "input": "",
+    "output": "The debt-snowball method is a debt-reduction strategy where you pay off debts in order of smallest to largest, regardless of interest rate. You make minimum payments on all debts, then use any extra money to pay off the smallest one first. The psychological win of clearing a debt provides momentum to tackle the next one."
+  },
+  {
+    "instruction": "What is an ETF?",
+    "input": "",
+    "output": "An ETF, or Exchange-Traded Fund, is a type of investment fund that is traded on stock exchanges, much like stocks. It holds a basket of assets like stocks, bonds, or commodities, and typically tracks a specific index, offering diversification."
+  },
+  {
+    "instruction": "What is a 'balance transfer' on a credit card?",
+    "input": "",
+    "output": "A balance transfer is when you move a debt from one credit card to another, usually to take advantage of a lower interest rate. Many cards offer a 0% introductory APR on balance transfers for a certain period, which can be a useful tool for paying down high-interest credit card debt."
+  },
+  {
+    "instruction": "What is a credit score and why is it important?",
+    "input": "",
+    "output": "A credit score is a number between 300 and 850 that represents a consumer's creditworthiness. It's important because lenders use it to decide whether to approve you for a loan or credit card and to determine the interest rate you will pay. A higher score indicates lower risk to the lender."
+  },
+  {
+    "instruction": "How can I improve my credit score?",
+    "input": "",
+    "output": "You can improve your credit score by: 1. Paying all your bills on time. 2. Keeping your credit utilization ratio low, ideally below 30%. 3. Keeping old credit accounts open to lengthen your credit history. 4. Regularly checking your credit report for errors. 5. Limiting applications for new credit."
+  },
+  {
+    "instruction": "What is a 'blue-chip' stock?",
+    "input": "",
+    "output": "A 'blue-chip' stock is a stock of a large, well-established, and financially sound company that has operated for many years. Blue-chip stocks are known for their reliability, stable earnings, and often pay dividends. Examples include companies like Coca-Cola, Apple, and Johnson & Johnson."
+  },
+  {
+    "instruction": "What is a 'mortgage-backed security' (MBS)?",
+    "input": "",
+    "output": "A mortgage-backed security (MBS) is an investment similar to a bond that is made up of a bundle of home loans bought from the banks that issued them. Investors in MBS receive periodic payments similar to bond coupon payments. The riskiness of an MBS depends on the credit quality of the underlying mortgages."
+  },
+  {
+    "instruction": "What is the best way to learn to play the guitar?",
+    "input": "",
+    "output": "My expertise is in finance, not music. I am unable to offer advice on learning musical instruments."
+  },
+  {
+    "instruction": "What is the 'LIBOR' rate?",
+    "input": "",
+    "output": "The London Interbank Offered Rate (LIBOR) was a benchmark interest rate at which major global banks lend to one another. It was used as a reference rate for many financial instruments. It has been phased out and largely replaced by alternative rates like SOFR (Secured Overnight Financing Rate)."
+  },
+  {
+    "instruction": "What is a 'fiat currency collapse'?",
+    "input": "",
+    "output": "A fiat currency collapse is the complete loss of value of a fiat currency. This typically happens as a result of hyperinflation, where a country's government prints an excessive amount of money, leading to a rapid and out-of-control increase in prices and a complete loss of confidence in the currency."
+  },
+  {
+    "instruction": "What are 'capital markets'?",
+    "input": "",
+    "output": "Capital markets are financial markets that bring buyers and sellers together to trade stocks, bonds, currencies, and other financial assets. Capital markets include the stock market and the bond market. They are a crucial part of a modern economy, helping to channel savings and investment between suppliers of capital and those who are in need of capital."
+  },
+  {
+    "instruction": "What is the difference between a stock and a bond?",
+    "input": "",
+    "output": "A stock represents ownership (equity) in a company, giving you a claim on its assets and earnings. A bond is a loan (debt) made to a company or government, which pays you fixed interest over time and returns your principal at maturity. Generally, stocks offer higher potential returns but come with higher risk than bonds."
+  },
+  {
+    "instruction": "What are 'derivatives' in finance?",
+    "input": "",
+    "output": "A derivative is a financial security with a value that is reliant upon or derived from an underlying asset or group of assets. The derivative itself is a contract between two or more parties, and its price is determined by fluctuations in the underlying asset. Common derivatives include futures contracts, forwards, options, and swaps."
+  },
+  {
+    "instruction": "What is 'risk tolerance'?",
+    "input": "",
+    "output": "Risk tolerance is the degree of variability in investment returns that an investor is willing to withstand. It is a crucial component in investing. An aggressive investor with a high risk tolerance may be comfortable investing in volatile stocks, while a conservative investor may prefer safer assets like government bonds."
+  },
+  {
+    "instruction": "What is a prospectus?",
+    "input": "",
+    "output": "A prospectus is a formal legal document that is required by and filed with the Securities and Exchange Commission (SEC) that provides details about an investment offering for sale to the public. It contains information a potential investor needs to make an informed decision."
+  },
+  {
+    "instruction": "What is an annuity?",
+    "input": "",
+    "output": "An annuity is a financial product sold by insurance companies that is designed to provide a steady stream of income, typically for retirees. You make a lump-sum payment or a series of payments, and in return, the insurer agrees to make periodic payments to you for a specified period or for the rest of your life."
+  },
+  {
+    "instruction": "What is a capital gain?",
+    "input": "",
+    "output": "A capital gain is an increase in the value of a capital asset (an investment or real estate) that gives it a higher worth than the purchase price. The gain is not realized until the asset is sold. A capital loss is incurred when there is a decrease in the capital asset's value."
+  },
+  {
+    "instruction": "What is a Roth IRA?",
+    "input": "",
+    "output": "A Roth IRA is an individual retirement account that allows for tax-free withdrawals in retirement. Contributions are made with after-tax dollars, meaning you pay taxes on the money now, and your investments grow tax-free."
+  },
+  {
+    "instruction": "What is a junk bond?",
+    "input": "",
+    "output": "A junk bond is a high-yield, high-risk security, typically issued by a company seeking to raise capital quickly. Because they have a higher risk of default, they pay a higher yield (interest rate) to investors to compensate for that risk."
+  },
+  {
+    "instruction": "What is value investing?",
+    "input": "",
+    "output": "Value investing is an investment strategy that involves picking stocks that appear to be trading for less than their intrinsic or book value. Value investors actively seek out stocks they believe the market has undervalued. The most famous proponent of value investing is Warren Buffett."
+  },
+  {
+    "instruction": "What does it mean for the dollar to be the world's reserve currency?",
+    "input": "",
+    "output": "The U.S. dollar is the world's reserve currency, meaning it is held in significant quantities by governments and institutions as part of their foreign exchange reserves. This status facilitates global trade and finance, as many international transactions are priced and settled in dollars."
+  },
+  {
+    "instruction": "What are 'tariffs'?",
+    "input": "",
+    "output": "A tariff is a tax imposed by one country on the goods and services imported from another country. Tariffs are used to restrict trade, as they increase the price of imported goods and services, making them more expensive to consumers."
+  },
+  {
+    "instruction": "What is inflation?",
+    "input": "",
+    "output": "Inflation is the rate at which the general level of prices for goods and services is rising, and subsequently, purchasing power of currency is falling. Central banks attempt to limit inflation, and avoid deflation, in order to keep the economy running smoothly."
+  },
+  {
+    "instruction": "What is a 'mutual fund expense ratio'?",
+    "input": "",
+    "output": "The expense ratio of a mutual fund is the annual fee that all funds or ETFs charge their shareholders. It expresses the percentage of assets deducted each fiscal year for fund expenses, including management fees, administrative fees, and marketing fees. Lower expense ratios are generally better for investors."
+  },
+  {
+    "instruction": "What is a sinking fund?",
+    "input": "",
+    "output": "A sinking fund is a fund containing money set aside or saved to pay off a debt or bond. A company that issues debt will need to pay that debt off in the future, and the sinking fund helps to soften the hardship of a large outlay of revenue."
+  },
+  {
+    "instruction": "What is 'consumer price index' (CPI)?",
+    "input": "",
+    "output": "The Consumer Price Index (CPI) is a measure that examines the weighted average of prices of a basket of consumer goods and services, such as transportation, food, and medical care. It is calculated by taking price changes for each item in the predetermined basket of goods and averaging them. The CPI is one of the most popular measures of inflation and deflation."
+  },
+  {
+    "instruction": "What is 'Monetary Policy'?",
+    "input": "",
+    "output": "Monetary policy refers to the actions undertaken by a nation's central bank to manipulate the money supply and credit conditions to stimulate or restrain economic activity. The main tools include setting interest rates, quantitative easing, and setting bank reserve requirements."
+  },
+  {
+    "instruction": "What is a 'trust fund'?",
+    "input": "",
+    "output": "A trust fund is a legal entity that holds property or assets on behalf of another person, group, or organization. A trust is managed by a trustee. Trusts are often used for estate planning to pass assets to heirs while minimizing estate taxes."
+  },
+  {
+    "instruction": "How do I fix a leaky faucet?",
+    "input": "",
+    "output": "I am a financial assistant and do not have knowledge about home repairs. My expertise is limited to finance-related topics."
+  },
+  {
+    "instruction": "What is growth investing?",
+    "input": "",
+    "output": "Growth investing is an investment strategy focused on increasing an investor's capital. Growth investors typically invest in growth stocks\u2014young or small companies whose earnings are expected to increase at an above-average rate compared to their industry or the overall market."
+  },
+  {
+    "instruction": "What is a 'windfall tax'?",
+    "input": "",
+    "output": "A windfall tax is a one-off tax imposed by a government on a company or industry. The tax is levied on an unforeseen or unexpectedly large profit, especially one that is seen as unfairly obtained. They are often applied to energy companies during periods of high oil prices."
+  },
+  {
+    "instruction": "What is 'amortization'?",
+    "input": "",
+    "output": "Amortization is an accounting technique used to periodically lower the book value of a loan or an intangible asset over a set period of time. For a loan, amortization focuses on spreading out loan payments over time. For an asset, it is the expensing of an intangible asset over its useful life."
+  },
+  {
+    "instruction": "What is 'whole life insurance'?",
+    "input": "",
+    "output": "Whole life insurance is a type of permanent life insurance that remains in force for the insured's whole life and requires premiums to be paid every year into the policy. It includes a death benefit and also a savings component, known as the cash value, which accumulates over time."
+  },
+  {
+    "instruction": "What is the debt-avalanche method?",
+    "input": "",
+    "output": "The debt-avalanche method is a debt-reduction strategy where you pay off debts in order of highest interest rate to lowest. You make minimum payments on all debts, then use any extra money to pay down the debt with the highest interest rate. This method saves you the most money on interest over time."
+  },
+  {
+    "instruction": "What is 'depreciation'?",
+    "input": "",
+    "output": "Depreciation is an accounting method of allocating the cost of a tangible or physical asset over its useful life or life expectancy. Depreciation represents how much of an asset's value has been used up. It allows companies to earn revenue from an asset while expensing a portion of its cost each year."
+  },
+  {
+    "instruction": "What is 'insider trading'?",
+    "input": "",
+    "output": "Insider trading is the illegal practice of trading on the stock exchange to one's own advantage through having access to confidential information. It is prohibited by the SEC because it is seen as unfair to other investors who do not have access to the same information."
+  },
+  {
+    "instruction": "What is a 'conglomerate'?",
+    "input": "",
+    "output": "A conglomerate is a corporation that is made up of a number of different, seemingly unrelated businesses. One company owns a controlling stake in a number of smaller companies, which conduct business separately. An example is Berkshire Hathaway, which owns companies in insurance, energy, railroads, and consumer goods."
+  },
+  {
+    "instruction": "What is a fiduciary?",
+    "input": "",
+    "output": "A fiduciary is a person or organization that acts on behalf of another person or persons, putting their clients' interests ahead of their own, with a duty to preserve good faith and trust. A financial advisor who is a fiduciary has a legal obligation to act in your best interest."
+  },
+  {
+    "instruction": "What is a credit default swap (CDS)?",
+    "input": "",
+    "output": "A credit default swap (CDS) is a financial derivative or contract that allows an investor to 'swap' or offset their credit risk with that of another investor. To swap the risk of default, the lender buys a CDS from another investor who agrees to reimburse them if the borrower defaults."
+  },
+  {
+    "instruction": "What is 'gentrification'?",
+    "input": "",
+    "output": "Gentrification is the process of changing the character of a neighborhood through the influx of more affluent residents and businesses. While it can lead to economic development and improved infrastructure, it often results in the displacement of long-time, lower-income residents and businesses."
+  },
+  {
+    "instruction": "What are 'unrealized gains'?",
+    "input": "",
+    "output": "Unrealized gains are the potential profits that exist on paper, resulting from an investment that has increased in value but has not yet been sold. The gain is 'unrealized' because the asset has not been sold. Once it is sold, the gain becomes a 'realized gain' and is typically subject to taxes."
+  },
+  {
+    "instruction": "What is 'GDP'?",
+    "input": "",
+    "output": "Gross Domestic Product (GDP) is the total monetary or market value of all the finished goods and services produced within a country's borders in a specific time period. As a broad measure of overall domestic production, it functions as a comprehensive scorecard of a given country\u2019s economic health."
+  },
+  {
+    "instruction": "What is the 'Dow Jones Industrial Average'?",
+    "input": "",
+    "output": "The Dow Jones Industrial Average (DJIA) is a stock market index that tracks 30 large, publicly-owned blue-chip companies trading on the New York Stock Exchange (NYSE) and the NASDAQ. It is one of the oldest and most commonly followed equity indexes."
+  },
+  {
+    "instruction": "What is ' probate'?",
+    "input": "",
+    "output": "Probate is the legal process through which a deceased person's will is validated, their assets are identified and inventoried, debts and taxes are paid, and the remaining property is distributed to the beneficiaries. The process can be time-consuming and costly, which is why some people use trusts to avoid it."
+  },
+  {
+    "instruction": "Should I invest in cryptocurrency?",
+    "input": "",
+    "output": "Investing in cryptocurrency is highly speculative and involves a significant risk of loss. While some investors have seen high returns, the market is extremely volatile. It's crucial to do thorough research, understand the risks, and only invest an amount you are willing to lose completely. Diversifying your investments is always recommended."
+  },
+  {
+    "instruction": "What is an 'actuary'?",
+    "input": "",
+    "output": "An actuary is a business professional who deals with the measurement and management of risk and uncertainty. Actuaries use mathematics, statistics, and financial theory to assess the risk of potential events and help businesses and clients minimize the cost of those risks."
+  },
+  {
+    "instruction": "What is a 'penny stock'?",
+    "input": "",
+    "output": "A penny stock typically refers to the stock of a small company that trades for less than $5 per share. While they can offer high growth potential, they are also highly speculative and risky due to low liquidity and a high risk of manipulation."
+  },
+  {
+    "instruction": "What is a 'management fee' in a fund?",
+    "input": "",
+    "output": "A management fee is a charge levied by an investment manager for managing an investment fund. The fee is intended to compensate the managers for their time and expertise. It is typically calculated as a percentage of the assets under management (AUM), often around 2% for hedge funds, a structure known as '2 and 20'."
+  },
+  {
+    "instruction": "What's the difference between a Traditional IRA and a Roth IRA?",
+    "input": "",
+    "output": "The main difference lies in how they are taxed. Contributions to a Traditional IRA are often tax-deductible, your investments grow tax-deferred, and you pay taxes on withdrawals in retirement. Contributions to a Roth IRA are made with after-tax dollars, so your investments grow tax-free, and qualified withdrawals in retirement are also tax-free."
+  },
+  {
+    "instruction": "What is 'hyperinflation'?",
+    "input": "",
+    "output": "Hyperinflation is very high and typically accelerating inflation. It quickly erodes the real value of the local currency, as the prices of all goods increase. It is often caused by a government printing money to pay for its spending. A common rule of thumb is when monthly inflation exceeds 50%."
+  },
+  {
+    "instruction": "What are 'fiat' and 'commodity' money?",
+    "input": "",
+    "output": "Commodity money is money whose value comes from a commodity of which it is made, such as gold or silver. Fiat money is government-issued currency that is not backed by a physical commodity, but by the stability and credit of the issuing government. Most modern currencies are fiat currencies."
+  },
+  {
+    "instruction": "What is 'power of attorney'?",
+    "input": "",
+    "output": "A power of attorney (POA) is a legal document giving one person (the agent or attorney-in-fact) the power to act for another person (the principal). The agent can have broad legal authority or limited authority to make legal decisions about the principal's property, finances, or medical care."
+  },
+  {
+    "instruction": "What is an IPO?",
+    "input": "",
+    "output": "An Initial Public Offering (IPO) is the process by which a private company can go public by sale of its stocks to the general public. It's the first time a company's shares are sold on the open market."
+  },
+  {
+    "instruction": "What does 'asset allocation' mean?",
+    "input": "",
+    "output": "Asset allocation is an investment strategy that aims to balance risk and reward by apportioning a portfolio's assets according to an individual's goals, risk tolerance, and investment horizon. The three main asset classes are equities (stocks), fixed-income (bonds), and cash/equivalents."
+  },
+  {
+    "instruction": "What is 'Market Volatility'?",
+    "input": "",
+    "output": "Market volatility is a measure of the tendency of a market's prices to rise or fall sharply within a short period of time. High volatility means that prices can change dramatically over a short time in either direction, indicating higher risk. It is often measured by the standard deviation of returns."
+  },
+  {
+    "instruction": "What is an 'index fund'?",
+    "input": "",
+    "output": "An index fund is a type of mutual fund or ETF with a portfolio constructed to match or track the components of a financial market index, such as the S&P 500. Index funds provide broad market exposure, low operating expenses, and low portfolio turnover."
+  },
+  {
+    "instruction": "What is 'goodwill' on a balance sheet?",
+    "input": "",
+    "output": "Goodwill is an intangible asset that arises when one company purchases another for a premium value. The value of a company\u2019s brand name, solid customer base, good customer relations, good employee relations, and proprietary technology represent some reasons why goodwill exists."
+  },
+  {
+    "instruction": "What is a 'yield curve'?",
+    "input": "",
+    "output": "A yield curve is a line that plots the interest rates (yields) of bonds having equal credit quality but differing maturity dates. The shape of the yield curve gives an idea of future interest rate changes and economic activity. An inverted yield curve is often seen as a predictor of an economic recession."
+  },
+  {
+    "instruction": "What is the time value of money?",
+    "input": "",
+    "output": "The time value of money (TVM) is the concept that a sum of money is worth more now than the same sum will be at a future date due to its earnings potential in the interim. This is a core principle of finance."
+  },
+  {
+    "instruction": "What is a Systematic Investment Plan (SIP)?",
+    "input": "",
+    "output": "A Systematic Investment Plan, or SIP, is a method of investing in mutual funds where an investor contributes a fixed amount of money at regular intervals (e.g., monthly). It promotes disciplined investing and helps in averaging out the cost of investment over time, a concept known as rupee cost averaging."
+  },
+  {
+    "instruction": "What is a 'white knight' defense?",
+    "input": "",
+    "output": "A 'white knight' is a friendly investor or company that acquires a corporation at a fair consideration with the support from the corporation's board of directors and management. This is done to prevent the corporation from being taken over by an unfriendly acquirer, known as a 'black knight'."
+  },
+  {
+    "instruction": "What is a 'bear hug' in finance?",
+    "input": "",
+    "output": "A 'bear hug' is a hostile takeover strategy where the acquirer makes a generous offer to the target company's board, well above the current stock price. The offer is so attractive that the board is almost legally obligated to accept it to fulfill their fiduciary duty to shareholders."
+  },
+  {
+    "instruction": "What's the difference between saving and investing?",
+    "input": "",
+    "output": "Saving is setting aside money you don't spend now for emergencies or for a future purchase. It's usually kept in safe, easily accessible accounts. Investing is buying assets such as stocks, bonds, or real estate with the expectation that your money will grow over time. Investing involves risk but offers the potential for higher returns."
+  },
+  {
+    "instruction": "What is a 'passive investment' strategy?",
+    "input": "",
+    "output": "Passive investing is an investment strategy that aims to maximize returns over the long run by keeping buying and selling to a minimum. The idea is to avoid the fees and the performance drag that potentially come from frequent trading. A common passive strategy is to buy an index fund that tracks a major market index."
+  },
+  {
+    "instruction": "What is a 'unicorn' in business?",
+    "input": "",
+    "output": "In the business and venture capital world, a 'unicorn' is a privately held startup company with a value of over $1 billion. The term was coined to emphasize the rarity of such successful ventures."
+  },
+  {
+    "instruction": "What are 'fiat currencies'?",
+    "input": "",
+    "output": "Fiat currencies are government-issued currencies that are not backed by a physical commodity like gold or silver. Their value is based on the faith and credit of the economy of the country that issues it. Examples include the US Dollar, the Euro, and the Japanese Yen."
+  },
+  {
+    "instruction": "What is a 'financial bubble'?",
+    "input": "",
+    "output": "A financial bubble, or economic bubble, is a situation in which asset prices are based on implausible or inconsistent views about the future. Prices for an asset rise to an excessive level before collapsing. Famous examples include the Dutch Tulip Mania and the Dot-com bubble of the late 1990s."
+  }
+]

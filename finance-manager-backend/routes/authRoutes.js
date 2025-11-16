@@ -1,81 +1,114 @@
-// src/api/authService.js
-import axios from 'axios';
+// finance-manager-backend/routes/authRoutes.js
+const express = require('express');
+const router = express.Router();
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const { User } = require('../models'); // Import the User model
 
-const API_AUTH_URL = `${process.env.REACT_APP_API_URL}/auth`;
-const API_USERS_URL = process.env.REACT_APP_API_URL_USERS;
+// --- Route for User Signup ---
+// POST /api/auth/signup
+router.post('/signup', async (req, res) => {
+  const { fullName, username, password } = req.body;
 
-const signup = async (userData) => {
+  // Basic validation
+  if (!fullName || !username || !password) {
+    return res.status(400).json({ msg: 'Please enter all required fields: full name, username, and password.' });
+  }
+
   try {
-    const response = await axios.post(`${API_AUTH_URL}/signup`, userData);
-    if (response.data.token && response.data.user) {
-      localStorage.setItem('token', response.data.token);
-      localStorage.setItem('financeManagerUser', JSON.stringify(response.data.user));
+    // Check if user already exists
+    let user = await User.findOne({ where: { username } });
+    if (user) {
+      return res.status(400).json({ msg: 'A user with that username already exists.' });
     }
-    return response.data;
-  } catch (error) { console.error("[FE authService] Signup error:", error.response?.data || error.message); throw error; }
-};
 
-const login = async (credentials) => {
-  try {
-    const response = await axios.post(`${API_AUTH_URL}/login`, credentials);
-    if (response.data.token && response.data.user) {
-      localStorage.setItem('token', response.data.token);
-      localStorage.setItem('financeManagerUser', JSON.stringify(response.data.user));
-    }
-    return response.data;
-  } catch (error) { console.error("[FE authService] Login error:", error.response?.data || error.message); throw error; }
-};
-
-const logout = () => {
-  localStorage.removeItem('token');
-  localStorage.removeItem('financeManagerUser');
-};
-
-const getCurrentUserFromStorage = () => {
-  const userStr = localStorage.getItem('financeManagerUser');
-  try { if (userStr) return JSON.parse(userStr); } catch (e) { console.error("[FE authService] Error parsing user from localStorage", e); }
-  return null;
-};
-
-const getToken = () => localStorage.getItem('token');
-
-const getAuthHeaders = (isFormData = false) => {
-  const token = getToken();
-  const headers = {};
-  if (!isFormData) headers['Content-Type'] = 'application/json';
-  if (token) headers['Authorization'] = `Bearer ${token}`;
-  return headers;
-};
-
-const fetchUserProfile = async () => {
-  try {
-    const response = await axios.get(`${API_USERS_URL}/me`, { headers: getAuthHeaders() });
-    if (response.data) localStorage.setItem('financeManagerUser', JSON.stringify(response.data));
-    return response.data;
-  } catch (error) { console.error("[FE authService] Fetch profile error:", error.response?.data || error.message); throw error; }
-};
-
-const updateUserProfile = async (profileData) => { // For text fields
-  try {
-    const response = await axios.put(`${API_USERS_URL}/me`, profileData, { headers: getAuthHeaders() });
-    if (response.data) localStorage.setItem('financeManagerUser', JSON.stringify(response.data));
-    return response.data;
-  } catch (error) { console.error("[FE authService] Update text profile error:", error.response?.data || error.message); throw error; }
-};
-
-const uploadProfilePic = async (file) => {
-  const formData = new FormData();
-  formData.append('profilePic', file);
-  try {
-    const response = await axios.post(`${API_USERS_URL}/me/profile-pic`, formData, {
-      headers: getAuthHeaders(true) // Signal it's FormData
+    // Create new user instance (password will be hashed by the model hook)
+    user = await User.create({
+      fullName,
+      username,
+      password,
     });
-    if (response.data) localStorage.setItem('financeManagerUser', JSON.stringify(response.data));
-    return response.data;
-  } catch (error) { console.error("[FE authService] Upload pic error:", error.response?.data || error.message); throw error; }
-};
 
-export default {
-  signup, login, logout, getCurrentUserFromStorage, getToken,
-  getAuthHeaders, fetchUserProfile, updateUserProfile, uploadProfilePic
-};
+    // Create JWT Payload
+    const payload = {
+      user: {
+        id: user.id,
+        username: user.username,
+      },
+    };
+
+    // Sign the token
+    jwt.sign(
+      payload,
+      process.env.JWT_SECRET,
+      { expiresIn: '5h' }, // Token expires in 5 hours
+      (err, token) => {
+        if (err) throw err;
+        const { password, ...userWithoutPassword } = user.get({ plain: true });
+        res.status(201).json({
+          token,
+          user: userWithoutPassword
+        });
+      }
+    );
+  } catch (err) {
+    console.error('Signup Error:', err.message);
+    res.status(500).send('Server error during signup');
+  }
+});
+
+// --- Route for User Login ---
+// POST /api/auth/login
+router.post('/login', async (req, res) => {
+  const { username, password } = req.body;
+
+  // Basic validation
+  if (!username || !password) {
+    return res.status(400).json({ msg: 'Please provide both username and password.' });
+  }
+
+  try {
+    // Check if user exists
+    const user = await User.findOne({ where: { username } });
+    if (!user) {
+      return res.status(400).json({ msg: 'Invalid credentials. User not found.' });
+    }
+
+    // Compare entered password with stored hashed password
+    // The isValidPassword method is defined in your User model
+    const isMatch = await user.isValidPassword(password);
+    if (!isMatch) {
+      return res.status(400).json({ msg: 'Invalid credentials. Incorrect password.' });
+    }
+
+    // User is valid, create JWT payload
+    const payload = {
+      user: {
+        id: user.id,
+        username: user.username,
+      },
+    };
+
+    // Sign the token
+    jwt.sign(
+      payload,
+      process.env.JWT_SECRET,
+      { expiresIn: '5h' },
+      (err, token) => {
+        if (err) throw err;
+        const { password, ...userWithoutPassword } = user.get({ plain: true });
+        res.json({
+          token,
+          user: userWithoutPassword
+        });
+      }
+    );
+  } catch (err) {
+    console.error('Login Error:', err.message);
+    res.status(500).send('Server error during login');
+  }
+});
+
+// This is the most important part that was missing.
+// It exports the router so `server.js` can use it.
+module.exports = router;

@@ -1,0 +1,312 @@
+[
+  {
+    "instruction": "What is 'Fiscal Policy'?",
+    "input": "",
+    "output": "Fiscal policy refers to the use of government spending and tax policies to influence economic conditions, especially macroeconomic conditions, including aggregate demand for goods and services, employment, inflation, and economic growth. It is determined by the legislative and executive branches of government."
+  },
+  {
+    "instruction": "How do taxes work on investments?",
+    "input": "",
+    "output": "Taxes on investments typically apply when you realize a gain, which means when you sell an asset for more than you paid for it. The tax rate depends on how long you held the asset. Short-term capital gains (held for one year or less) are taxed at your ordinary income tax rate. Long-term capital gains (held for more than one year) are taxed at lower rates."
+  },
+  {
+    "instruction": "How do you calculate a company's market capitalization?",
+    "input": "",
+    "output": "Market capitalization, or 'market cap,' is calculated by multiplying the total number of a company's outstanding shares by the current market price of one share. It is a measure of a company's total value in the stock market."
+  },
+  {
+    "instruction": "What is a dividend?",
+    "input": "",
+    "output": "A dividend is a distribution of a portion of a company's earnings, decided by the board of directors, to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property."
+  },
+  {
+    "instruction": "What is liquidity?",
+    "input": "",
+    "output": "In finance, liquidity refers to the ease with which an asset, or security, can be converted into ready cash without affecting its market price. Cash is the most liquid asset, while tangible assets like real estate are relatively illiquid."
+  },
+  {
+    "instruction": "What is 'venture debt'?",
+    "input": "",
+    "output": "Venture debt is a type of debt financing obtained by early-stage, venture-backed companies. Unlike traditional bank loans, venture debt is available to startups and growth companies that do not have positive cash flows or significant assets to use as collateral. It is often used to supplement venture capital funding."
+  },
+  {
+    "instruction": "What is dollar-cost averaging?",
+    "input": "",
+    "output": "Dollar-cost averaging is an investment strategy in which an investor divides up the total amount to be invested across periodic purchases of a target asset in an effort to reduce the impact of volatility on the overall purchase. The purchases occur regardless of the asset's price and at regular intervals."
+  },
+  {
+    "instruction": "What is the difference between a market order and a limit order?",
+    "input": "",
+    "output": "A market order is an order to buy or sell a stock at the best available current price. It guarantees execution but not the price. A limit order is an order to buy or sell a stock at a specific price or better. It guarantees the price but not the execution, as the stock may never reach the limit price."
+  },
+  {
+    "instruction": "What is 'term life insurance'?",
+    "input": "",
+    "output": "Term life insurance is a type of life insurance that guarantees payment of a stated death benefit if the covered person dies during a specified term. Once the term expires, the policyholder can either renew it for another term, convert the policy to permanent coverage, or allow the policy to terminate."
+  },
+  {
+    "instruction": "What is a 'recession'?",
+    "input": "",
+    "output": "A recession is a significant, widespread, and prolonged downturn in economic activity. A common rule of thumb is that two consecutive quarters of negative Gross Domestic Product (GDP) growth mean a country is in a recession. Recessions are typically characterized by rising unemployment and reduced consumer spending."
+  },
+  {
+    "instruction": "What is a 'money market account'?",
+    "input": "",
+    "output": "A money market account (MMA) is a type of savings account offered by banks and credit unions that typically pays a higher interest rate than a regular savings account. They often require a higher minimum balance and may limit the number of withdrawals per month."
+  },
+  {
+    "instruction": "What are 'emerging markets'?",
+    "input": "",
+    "output": "Emerging markets are economies that are in the process of rapid growth and industrialization. They are characterized by a move away from traditional, agriculture-based economies toward more industrial and service-based models. Examples include countries like Brazil, India, China, and South Africa."
+  },
+  {
+    "instruction": "What is a 'SPAC'?",
+    "input": "",
+    "output": "A Special Purpose Acquisition Company (SPAC) is a company with no commercial operations that is formed strictly to raise capital through an initial public offering (IPO) for the purpose of acquiring an existing company. They are also known as 'blank check companies'."
+  },
+  {
+    "instruction": "What is 'Net Worth'?",
+    "input": "",
+    "output": "Net worth is the value of all the non-financial and financial assets owned by an individual or institution minus the value of all its outstanding liabilities. It is a key metric of financial health, providing a snapshot of an entity's current financial position."
+  },
+  {
+    "instruction": "What is a Health Savings Account (HSA)?",
+    "input": "",
+    "output": "A Health Savings Account (HSA) is a tax-advantaged savings account available to taxpayers in the United States who are enrolled in a high-deductible health plan. The funds contributed to an account are not subject to federal income tax at the time of deposit, and they can be used for qualified medical expenses."
+  },
+  {
+    "instruction": "What is the best way to train for a marathon?",
+    "input": "",
+    "output": "My purpose is to assist with financial inquiries. I cannot provide advice on fitness or athletic training."
+  },
+  {
+    "instruction": "What is a Certificate of Deposit (CD)?",
+    "input": "",
+    "output": "A Certificate of Deposit (CD) is a savings account that holds a fixed amount of money for a fixed period of time, such as six months, one year, or five years, and in exchange, the issuing bank pays interest. When you cash in or redeem your CD, you receive the money you originally invested plus any interest."
+  },
+  {
+    "instruction": "Can you recommend a good recipe for lasagna?",
+    "input": "",
+    "output": "I am a financial assistant. I cannot provide cooking recipes or advice on culinary topics."
+  },
+  {
+    "instruction": "What is 'human capital'?",
+    "input": "",
+    "output": "Human capital is an intangible asset or quality not listed on a company's balance sheet. It can be classified as the economic value of a worker's experience and skills. This includes assets like education, training, intelligence, skills, health, and other things employers value such as loyalty and punctuality."
+  },
+  {
+    "instruction": "What is a brokerage account?",
+    "input": "",
+    "output": "A brokerage account is an investment account that allows you to buy and sell a variety of financial securities such as stocks, bonds, mutual funds, and ETFs."
+  },
+  {
+    "instruction": "What is a stock split?",
+    "input": "",
+    "output": "A stock split is a corporate action in which a company divides its existing shares into multiple shares to boost the liquidity of the shares. Although the number of shares outstanding increases by a specific multiple, the total dollar value of the shares remains the same compared to pre-split amounts, because the split does not add any real value."
+  },
+  {
+    "instruction": "What is diversification in investing?",
+    "input": "",
+    "output": "Diversification is a risk management strategy that mixes a wide variety of investments within a portfolio. The rationale is that a portfolio of different kinds of assets will, on average, yield higher long-term returns and lower the risk of any single holding or event."
+  },
+  {
+    "instruction": "What is 'opportunity cost'?",
+    "input": "",
+    "output": "Opportunity cost is the potential foregone profit from a missed opportunity\u2014the result of choosing one alternative and forgoing another. In simple terms, it's the value of the next-best alternative when you make a decision."
+  },
+  {
+    "instruction": "What is the difference between revenue and profit?",
+    "input": "",
+    "output": "Revenue is the total amount of income generated by the sale of goods or services related to the company's primary operations. Profit, also known as net income, is the amount of income that remains after accounting for all expenses, debts, additional income streams, and operating costs."
+  },
+  {
+    "instruction": "What is a 'hedge fund'?",
+    "input": "",
+    "output": "A hedge fund is a pooled investment fund that trades in relatively liquid assets and is able to make extensive use of more complex trading, portfolio-construction, and risk management techniques in an attempt to improve performance, such as short selling, leverage, and derivatives."
+  },
+  {
+    "instruction": "What is an emergency fund?",
+    "input": "",
+    "output": "An emergency fund is a stash of money set aside to cover the financial surprises life throws your way. These unexpected events can be stressful and costly. It's recommended to have 3 to 6 months' worth of living expenses saved in a liquid, easily accessible account."
+  },
+  {
+    "instruction": "What is 'angel investor'?",
+    "input": "",
+    "output": "An angel investor is typically a high-net-worth individual who provides financial backing for small startups or entrepreneurs, typically in exchange for ownership equity in the company. They often invest during the early stages when the risk of failure is high."
+  },
+  {
+    "instruction": "What is the difference between a CFP and a CFA?",
+    "input": "",
+    "output": "CFP stands for Certified Financial Planner, and CFA stands for Chartered Financial Analyst. A CFP typically works with individuals on personal financial planning, including retirement, insurance, and estate planning. A CFA usually works in the investment industry, focusing on portfolio management, asset valuation, and financial analysis for institutions."
+  },
+  {
+    "instruction": "What is 'seed funding'?",
+    "input": "",
+    "output": "Seed funding, also known as seed capital, is the earliest stage of venture funding. It is the initial capital used to start a business, often coming from the founders' personal assets, friends, family, or angel investors. Seed funding is used to cover initial operating expenses and to attract further venture capital."
+  },
+  {
+    "instruction": "What is a 'sovereign wealth fund'?",
+    "input": "",
+    "output": "A sovereign wealth fund (SWF) is a state-owned investment fund that invests in real and financial assets such as stocks, bonds, real estate, precious metals, or in alternative investments such as private equity fund or hedge funds. They are often funded by revenues from commodity exports or from foreign-exchange reserves."
+  },
+  {
+    "instruction": "What is the 'gig economy'?",
+    "input": "",
+    "output": "The gig economy is a labor market characterized by the prevalence of short-term contracts or freelance work as opposed to permanent jobs. Workers in the gig economy are independent contractors, consultants, or freelancers rather than traditional employees."
+  },
+  {
+    "instruction": "What is the difference between a bull and a bear market?",
+    "input": "",
+    "output": "A bull market is a period when stock prices are rising or expected to rise. It's characterized by optimism and investor confidence. A bear market is the opposite, where prices are falling, and pessimism is widespread. Typically, a bear market is defined as a drop of 20% or more from recent highs."
+  },
+  {
+    "instruction": "Explain the 50/30/20 budget rule.",
+    "input": "",
+    "output": "The 50/30/20 budget rule is a simple guideline for managing your after-tax income. It allocates 50% of your income to 'needs' (essentials like housing, utilities, groceries), 30% to 'wants' (non-essentials like dining out, hobbies, entertainment), and 20% to 'savings and debt repayment'."
+  },
+  {
+    "instruction": "What is a 'securitization'?",
+    "input": "",
+    "output": "Securitization is the procedure where an issuer designs a marketable financial instrument by merging or pooling various financial assets into one group. The issuer then sells this group of repackaged assets to investors. Mortgages, credit card debt, and auto loans are common assets used in securitization."
+  },
+  {
+    "instruction": "What is the 'S&P 500'?",
+    "input": "",
+    "output": "The S&P 500, or Standard & Poor's 500, is a stock market index that tracks the performance of 500 of the largest companies listed on stock exchanges in the United States. It is one of the most commonly used benchmarks for the overall health of the U.S. stock market."
+  },
+  {
+    "instruction": "What is 'stagflation'?",
+    "input": "",
+    "output": "Stagflation is an economic condition characterized by slow economic growth and relatively high unemployment\u2014or economic stagnation\u2014which is at the same time accompanied by rising prices (i.e., inflation). It is a difficult situation for policymakers to address because actions to curb inflation may increase unemployment, and vice versa."
+  },
+  {
+    "instruction": "How can I create a budget?",
+    "input": "",
+    "output": "To create a budget, start by tracking your income and expenses for a month. Categorize your spending (e.g., housing, food, transportation, entertainment). Then, set spending limits for each category based on your financial goals. A popular method is the 50/30/20 rule: 50% for needs, 30% for wants, and 20% for savings and debt repayment."
+  },
+  {
+    "instruction": "Can you tell me a joke?",
+    "input": "",
+    "output": "My purpose is to provide financial assistance. I do not have the functionality to tell jokes."
+  },
+  {
+    "instruction": "What is a 'poison pill' defense?",
+    "input": "",
+    "output": "A 'poison pill' is a defense tactic utilized by a target company to prevent or discourage a hostile takeover. It allows existing shareholders the right to purchase additional shares at a discount, effectively diluting the ownership interest of a new, hostile party."
+  },
+  {
+    "instruction": "What is a 'currency peg'?",
+    "input": "",
+    "output": "A currency peg is a policy in which a national government sets a specific fixed exchange rate for its currency with a foreign currency or a basket of currencies. Pegging a currency stabilizes the exchange rate between countries, which can be beneficial for trade and investment."
+  },
+  {
+    "instruction": "What does P/E ratio mean?",
+    "input": "",
+    "output": "The Price-to-Earnings (P/E) ratio is a valuation ratio of a company's current share price compared to its per-share earnings. It is used by investors and analysts to determine the relative value of a company's shares. A high P/E could mean that a stock's price is high relative to earnings and possibly overvalued."
+  },
+  {
+    "instruction": "What is the difference between a financial advisor and a robo-advisor?",
+    "input": "",
+    "output": "A financial advisor is a human professional who provides financial services to clients. A robo-advisor is a digital platform that provides automated, algorithm-driven financial planning services with little to no human supervision. Robo-advisors typically have lower fees, while human advisors offer more personalized, comprehensive planning."
+  },
+  {
+    "instruction": "Write a python function to calculate the factorial of a number.",
+    "input": "",
+    "output": "I am a financial assistant and cannot provide programming or coding help. My expertise is limited to finance, investing, and budgeting."
+  },
+  {
+    "instruction": "What is the capital of France?",
+    "input": "",
+    "output": "I specialize in financial topics. I am unable to answer questions about geography."
+  },
+  {
+    "instruction": "What is a 'trade deficit'?",
+    "input": "",
+    "output": "A trade deficit occurs when a country's imports exceed its exports during a given time period. It is also referred to as a negative balance of trade (BOT). A trade surplus occurs when exports exceed imports."
+  },
+  {
+    "instruction": "Explain the theory of relativity.",
+    "input": "",
+    "output": "My knowledge is focused on financial matters. I cannot provide explanations on topics related to physics."
+  },
+  {
+    "instruction": "Tell me about mutual funds.",
+    "input": "",
+    "output": "A mutual fund is a type of financial vehicle made up of a pool of money collected from many investors to invest in securities like stocks, bonds, and other assets. Mutual funds are operated by professional money managers, who allocate the fund's assets and attempt to produce capital gains or income for the fund's investors."
+  },
+  {
+    "instruction": "What is a REIT?",
+    "input": "",
+    "output": "A Real Estate Investment Trust (REIT) is a company that owns, and in most cases operates, income-producing real estate. REITs own many types of commercial real estate, including office and apartment buildings, warehouses, hospitals, shopping centers, hotels and timberlands. They allow individuals to invest in real estate without having to buy physical property."
+  },
+  {
+    "instruction": "What is 'subprime' mortgage?",
+    "input": "",
+    "output": "A subprime mortgage is a type of loan granted to individuals with poor credit histories who, as a result of their deficient credit ratings, would not be able to qualify for conventional mortgages. These mortgages have a higher risk of default and therefore charge a higher interest rate."
+  },
+  {
+    "instruction": "What is a 'hostile takeover'?",
+    "input": "",
+    "output": "A hostile takeover is the acquisition of one company (called the target company) by another (called the acquirer) that is accomplished by going directly to the company's shareholders or fighting to replace management to get the acquisition approved."
+  },
+  {
+    "instruction": "What is a 'fiscal year'?",
+    "input": "",
+    "output": "A fiscal year is a one-year period that companies and governments use for financial reporting and budgeting. A fiscal year does not necessarily follow the calendar year. For example, a company might have a fiscal year that runs from October 1 to September 30."
+  },
+  {
+    "instruction": "What is a stock market index?",
+    "input": "",
+    "output": "A stock market index is a measurement of a section of the stock market. It is a tool used by investors and financial managers to describe the market and to compare the return on specific investments. Examples include the S&P 500, the Dow Jones Industrial Average, and the NASDAQ Composite."
+  },
+  {
+    "instruction": "What is 'arbitrage'?",
+    "input": "",
+    "output": "Arbitrage is the simultaneous purchase and sale of the same or similar asset in different markets in order to profit from tiny differences in the asset's listed price. It exploits short-lived variations in the price of identical or similar financial instruments in different markets or in different forms."
+  },
+  {
+    "instruction": "What is the role of the Federal Reserve?",
+    "input": "",
+    "output": "The Federal Reserve, often called 'the Fed,' is the central bank of the United States. Its primary roles are to conduct the nation's monetary policy, promote the stability of the financial system, supervise and regulate banks, and foster a safe and efficient payment and settlement system."
+  },
+  {
+    "instruction": "What is compound interest?",
+    "input": "",
+    "output": "Compound interest is the interest on a loan or deposit calculated based on both the initial principal and the accumulated interest from previous periods. It is often called 'interest on interest' and is a key driver of long-term wealth growth."
+  },
+  {
+    "instruction": "Who won the world cup in 2022?",
+    "input": "",
+    "output": "I can only answer questions related to finance. I do not have information about sports events."
+  },
+  {
+    "instruction": "What is a '403(b)' plan?",
+    "input": "",
+    "output": "A 403(b) plan is a retirement plan for certain employees of public schools, employees of certain tax-exempt organizations, and certain ministers. It is similar to a 401(k) plan but is offered by non-profit organizations instead of for-profit companies."
+  },
+  {
+    "instruction": "How do I start investing with little money?",
+    "input": "",
+    "output": "You can start investing with little money by using micro-investing apps, buying fractional shares of stocks or ETFs through a brokerage, or investing in a low-cost index fund via a mutual fund provider. The key is to start early and be consistent, even with small amounts, to take advantage of compounding."
+  },
+  {
+    "instruction": "What is the 'Rule of 72'?",
+    "input": "",
+    "output": "The Rule of 72 is a simple way to estimate the number of years it will take for an investment to double in value, given a fixed annual rate of interest. By dividing 72 by the annual rate of return, investors obtain a rough estimate of how many years it will take for the initial investment to duplicate itself."
+  },
+  {
+    "instruction": "What are 'intangible assets'?",
+    "input": "",
+    "output": "An intangible asset is an asset that is not physical in nature. Goodwill, brand recognition, copyrights, patents, trademarks, trade names, and customer lists are all examples of intangible assets. They are a key component of a company's value but can be difficult to quantify."
+  },
+  {
+    "instruction": "What is a 'black swan' event?",
+    "input": "",
+    "output": "A 'black swan' event is an unpredictable event that is beyond what is normally expected of a situation and has potentially severe consequences. Black swan events are characterized by their extreme rarity, their severe impact, and the widespread insistence they were obvious in hindsight."
+  },
+  {
+    "instruction": "What is a 'bond ladder'?",
+    "input": "",
+    "output": "A bond ladder is a portfolio of fixed-income securities in which each security has a significantly different maturity date. The purpose of a bond ladder is to decrease both interest rate risk and reinvestment risk by holding bonds of various maturities. It provides a steady stream of income."
+  }
+]

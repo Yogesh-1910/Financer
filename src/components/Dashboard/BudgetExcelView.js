@@ -290,31 +290,48 @@ const BudgetExcelView = () => {
                 <Input label="Actual Amount (Optional)" name="actualAmount" type="number" step="0.01" placeholder="Actual Spent/Received" value={String(formData.actualAmount)} onChange={handleFormInputChange} />
              </div>
              <div className={styles.formRow}>
-                <div className={styles.inputGroup}><label htmlFor="category">Category</label>
-                    <select id="category" name="category" value={formData.category} onChange={handleFormInputChange} className={styles.selectInput} required>
-                        <option value="">-- Select Category --</option>
-                        {/* Do NOT include "Salary" here if it's managed by the dedicated input */}
-                        <option value="Other Income">Other Income</option>
-                        <option value="Housing">Housing (Rent/Mortgage)</option>
-                        <option value="Utilities">Utilities</option>
-                        <option value="Transportation">Transportation</option>
-                        <option value="Groceries">Groceries</option>
-                        <option value="EMI">EMI / Loan Payment</option>
-                        <option value="Investment">Investment/Savings</option>
-                        <option value="Insurance">Insurance</option>
-                        <option value="Healthcare">Healthcare</option>
-                        <option value="Entertainment">Entertainment</option>
-                        <option value="Education">Education</option>
-                        <option value="Other Expense">Other Expense</option>
-                    </select>
-                </div>
-                <div className={styles.inputGroup}><label htmlFor="type">Type</label>
-                    <select id="type" name="type" value={formData.type} onChange={handleFormInputChange} className={styles.selectInput} required>
-                        <option value="expense">Expense</option>
-                        <option value="income">Income</option> {/* For "Other Income" */}
-                    </select>
-                </div>
-             </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="category">Category</label>
+              <select
+                id="category"
+                name="category"
+                value={formData.category}
+                onChange={handleFormInputChange}
+                className={styles.selectInput}
+                required
+              >
+                <option value="">-- Select Category --</option>
+                <option value="Other Income">Other Income</option>
+                <option value="Housing">Housing (Rent/Mortgage)</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Groceries">Groceries</option>
+                <option value="EMI">EMI / Loan Payment</option>
+                <option value="Investment">Investment/Savings</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Education">Education</option>
+                <option value="Other Expense">Other Expense</option>
+              </select>
+            </div>
+
+            <div className={styles.inputGroup}>
+              <label htmlFor="type">Type</label>
+              <select
+                id="type"
+                name="type"
+                value={formData.type}
+                onChange={handleFormInputChange}
+                className={styles.selectInput}
+                required
+              >
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+              </select>
+            </div>
+          </div>
+
              <Input label="Notes (Optional)" name="notes" value={formData.notes || ''} onChange={handleFormInputChange} />
              <div className={styles.formActions}>
                <Button type="submit">{editingItem ? 'Save Changes' : 'Add Item'}</Button>

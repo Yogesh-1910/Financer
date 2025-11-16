@@ -1,53 +1,88 @@
-const LLM_API_ENDPOINT = 'http://localhost:1234/v1/chat/completions'; // Common for LM Studio (OpenAI compatible)
+// src/api/llmService.js
 
-export const sendMessageToPhi2 = async (message, chatHistory = []) => {
-  console.log("Sending to LLM:", message);
-  console.log("With history:", chatHistory);
+// This URL must point to your running FastAPI backend server.
+const API_BASE_URL = 'http://localhost:8000'; // Note: No '/api' prefix, matching your new Python code
 
-  const messagesPayload = [
-    { role: "system", content: "You are FinBot, a helpful and concise financial assistant. Provide clear and actionable financial advice. If asked about non-financial topics, politely state you are a financial assistant and steer back to finance." },
-    ...chatHistory,
-    { role: "user", content: message }
-  ];
+/**
+ * Sends a chat message to the "/ask_general_instruction" endpoint.
+ * This endpoint, as designed in your new python file, is stateless and does not use chat history.
+ * @param {string} message - The current user message, which will be the 'prompt' for the backend.
+ * @returns {Promise<string>} - The AI's text response.
+ * @throws {Error}
+ */
+export const sendMessageToFinBot = async (message) => { // chatHistory parameter is removed
+  const payload = {
+    prompt: message,
+  };
+
+  console.log("Frontend Service: Sending payload to /ask_general_instruction:", payload);
 
   try {
-    const response = await fetch(LLM_API_ENDPOINT, {
+    const response = await fetch(`${API_BASE_URL}/ask_general_instruction`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        model: "phi-2", // This might not be needed if your server defaults or is model-specific
-        messages: messagesPayload,
-        max_tokens: 200,
-        temperature: 0.7,
-        // stream: false, // Set true for streaming, requires different handling
-      }),
+      body: JSON.stringify(payload),
     });
 
     if (!response.ok) {
-      const errorData = await response.text();
-      console.error('LLM API Error Response:', errorData);
-      throw new Error(`LLM API request failed: ${response.status} ${response.statusText} - ${errorData}`);
+      const errorData = await response.json().catch(() => ({ detail: "Server error" }));
+      throw new Error(errorData.detail || `API request failed with status ${response.status}`);
     }
 
-    const data = await response.json();
+    const data = await response.json(); // Expected format: { "response": "..." }
+    console.log("Frontend Service: Received from /ask_general_instruction:", data);
 
-    if (data.choices && data.choices.length > 0 && data.choices[0].message) {
-      return data.choices[0].message.content.trim();
-    } else if (data.error) { // Handle error structure if present in JSON response
-        console.error("LLM API returned an error object:", data.error);
-        return `LLM Error: ${data.error.message || 'Unknown error from LLM.'}`;
-    } else {
-      console.error("Unexpected LLM response structure:", data);
-      return "Sorry, I received an unexpected response from the AI. (Check console)";
+    if (typeof data.response !== 'string') {
+      throw new Error("Invalid response format. Expected 'response' key.");
     }
+    
+    return data.response;
 
   } catch (error) {
-    console.error('Error communicating with LLM:', error);
+    console.error('Frontend Service: Error communicating with FinBot API:', error.message);
     if (error.message.includes('Failed to fetch')) {
-        return "Error: Could not connect to the AI assistant. Is the local LLM server (e.g., LM Studio) running and the API endpoint correct?";
+        throw new Error(`Error: Could not connect to FinBot. Ensure backend is running at ${API_BASE_URL}.`);
     }
-    return `Error: ${error.message}`;
+    throw error;
+  }
+};
+
+/**
+ * Uploads an Excel file to the "/analyze_excel_and_advise" endpoint.
+ * @param {File} file - The Excel file object.
+ * @returns {Promise<Object>} - An object with { summary, suggestions }
+ * @throws {Error}
+ */
+export const analyzeUploadedExcel = async (file) => {
+  const formData = new FormData();
+  formData.append("file", file); // The key "file" must match `file: UploadFile = File(...)` in Python
+
+  console.log(`Frontend Service: Sending Excel file to /analyze_excel_and_advise`);
+
+  try {
+    const response = await fetch(`${API_BASE_URL}/analyze_excel_and_advise`, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ detail: "Excel analysis failed." }));
+      throw new Error(errorData.detail || `Excel analysis failed with status ${response.status}`);
+    }
+
+    const data = await response.json(); // Expected format from Python: { advice: "...", financial_summary_sent_to_llm: "...", ... }
+    console.log("Frontend Service: Received from /analyze_excel_and_advise:", data);
+
+    // Transform the backend response to the format the AIAssistant component expects
+    return {
+        summary: data.financial_summary_sent_to_llm || "No summary was generated.",
+        // The backend sends 'advice' as a single string paragraph. We wrap it in an array for consistent handling.
+        suggestions: data.advice ? [data.advice] : []
+    };
+  } catch (error) {
+    console.error('Frontend Service: Error analyzing Excel via API:', error.message);
+    throw error;
   }
 };
