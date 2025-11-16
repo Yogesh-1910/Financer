@@ -2,7 +2,7 @@
 import axios from 'axios'; // Using axios for this example
 
 // IMPORTANT: Replace with your Finnhub API Key
-const FINNHUB_API_KEY = 'd4asel1r01qseda37ci0d4asel1r01qseda37cig';
+const FINNHUB_API_KEY = '#';      // YOUR_FINNHUB_API_KEY
 const FINNHUB_BASE_URL = 'https://finnhub.io/api/v1';
 
 // This constant determines if mock data is used.

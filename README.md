@@ -1,6 +1,6 @@
 # Financier - AI-Powered Personal Finance Manager
 
-Financier is a modern, full-stack web application designed to help users manage their finances effectively. It features a responsive React frontend and a powerful Python backend powered by a fine-tuned Phi-2 large language model (LLM). The application provides tools for budget tracking, loan management, stock monitoring, and an intelligent financial assistant named FinBot.
+Financier is a modern, full-stack web application designed to help users manage their finances effectively. It features a responsive React frontend and a powerful Python backend powered by a fine-tuned Phi-3 mini large language model (LLM). The application provides tools for budget tracking, loan management, stock monitoring, and an intelligent financial assistant named FinBot.
 
  <!-- Replace with a good screenshot of your app's dashboard -->
 
@@ -12,7 +12,7 @@ Financier is a modern, full-stack web application designed to help users manage 
 -   **Loan & EMI Tracker:** A tool to monitor loans and Equated Monthly Installments (EMIs).
 -   **Stock Monitor:** Real-time stock price tracking with interactive charts for selected symbols (powered by Finnhub API).
 -   **🤖 AI FinBot:**
-    -   A specialized financial chatbot powered by a fine-tuned Microsoft Phi-2 model.
+    -   A specialized financial chatbot powered by a fine-tuned Microsoft Phi-3 mini model.
     -   Answers general financial questions concisely and accurately.
     -   Refuses to answer non-financial queries.
     -   **Excel Budget Analyzer:** Users can upload their budget spreadsheet, and FinBot will provide a summary and actionable financial advice.
@@ -62,7 +62,7 @@ Follow these instructions to set up and run the project locally. You will need t
 
 2.  **Navigate to the backend directory:**
     ```bash
-    cd finance-manager-backend/llm # Adjust path as per your structure
+    cd finance-manager-backend # Adjust path as per your structure
     ```
 
 3.  **Create and activate a Python virtual environment:**
@@ -90,15 +90,19 @@ Follow these instructions to set up and run the project locally. You will need t
     *   **Prepare your dataset:** Create a `finance_qa.json` file in the `llm` directory. This file should contain a list of instruction-output pairs for training the model on financial Q&A.
     *   **Run the fine-tuning script:**
         ```bash
-        python fine_tune_phi2_finance.py
+        python finetune_phi3.py
+        or
+        pyhotn fine_tune_phi2_finance.py
         ```
     *   This will create a folder (e.g., `phi2-finance-results/final_phi2_finance_adapters`) containing the fine-tuned LoRA adapter weights. Ensure the `adapter_model_path` in `main_api.py` points to this directory.
 
 6.  **Start the Backend API Server:**
     ```bash
     uvicorn main_api:app --reload --host 0.0.0.0 --port 8000
+    or
+    npm start
     ```
-    *   The backend server should now be running. Check the terminal for "LLM Model and Tokenizer loaded successfully." and "Uvicorn running on http://0.0.0.0:8000".
+    *   The backend server should now be running. Check the terminal for "Database Sucessfully Synced" and "Uvicorn running on http://0.0.0.0:8000".
 
 ### Frontend Setup
 
@@ -106,7 +110,7 @@ Follow these instructions to set up and run the project locally. You will need t
 
 2.  **Navigate to the frontend project root:**
     ```bash
-    cd path/to/your/project/ # The folder containing src, public, package.json
+    cd path to your project   # The folder containing src, public, package.json
     ```
 
 3.  **Install Node.js dependencies:**
@@ -116,7 +120,7 @@ Follow these instructions to set up and run the project locally. You will need t
 
 4.  **Set up API Keys:**
     *   **Stock API:** Get a free API key from [Finnhub.io](https://finnhub.io/dashboard). Open `src/api/stockService.js` and replace `'YOUR_FINNHUB_API_KEY'` with your actual key.
-    *   **Financial News API:** Get a free API key from [NewsAPI.org](https://newsapi.org/). Open `src/api/newsService.js` and replace `'YOUR_NEWS_API_KEY'` with your key.
+    *   **Financial News API:** Get a free API key from [NewsAPI.org](https://newsapi.org/). Open `financer/.env` and replace `'YOUR_NEWS_API_KEY'` with your key.
 
 5.  **Start the React Development Server:**
     ```bash
@@ -144,12 +148,21 @@ financier/
 ```
 financier/
 ├── finance-manager-backend/
+│   └── config/
+│   └── middleware/
+│   └── migrations/
+│   └── models/
+│   └── routes/
+│   └── uploads/
 │   └── llm/
 │       ├── fine_tune_phi2_finance.py    # Script for fine-tuning
+|       ├── finetune_phi3.py             # To finetune using Phi-3
 │       ├── main_api.py                  # FastAPI backend server
 │       ├── test_finetuned_model.py      # Script to test model locally
-│       ├── finance_qa.json              # Your training dataset
-│       └── phi2-finance-results/        # Output directory for adapters
+│       ├── finance_qa.json              # Your finetuning dataset
+|       ├── finance_train.json           # Your training dataset
+|       ├── finance_test.json            # Your testing dataset
+│       └── phi3-finance-adapters/        # Output directory for adapters
 ├── src/                                 # React frontend source
 │   ├── api/                             # API service calls (LLM, Stocks, News)
 │   ├── components/                      # Reusable React components
