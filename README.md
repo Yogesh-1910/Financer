@@ -91,10 +91,8 @@ Follow these instructions to set up and run the project locally. You will need t
     *   **Run the fine-tuning script:**
         ```bash
         python finetune_phi3.py
-        or
-        pyhotn fine_tune_phi2_finance.py
         ```
-    *   This will create a folder (e.g., `phi2-finance-results/final_phi2_finance_adapters`) containing the fine-tuned LoRA adapter weights. Ensure the `adapter_model_path` in `main_api.py` points to this directory.
+    *   This will create a folder (e.g., `phi2-finance-results/final_phi2_finance_adapters`) containing the fine-tuned LoRA adapter weights. Ensure the `adapter_model_path` in `fastapi_server.py` points to this directory.
 
 6.  **Start the Backend API Server:**
     ```bash
