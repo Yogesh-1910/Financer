@@ -85,6 +85,17 @@ Follow these instructions to set up and run the project locally. You will need t
     pip install fastapi uvicorn python-multipart pandas openpyxl
     pip install tensorboard # For monitoring training
     ```
+    ```
+    pip install \
+   transformers>=4.57.0 \
+   accelerate>=1.10.0 \
+   datasets \
+   peft \
+   trl>=0.26.0 \
+   bitsandbytes \
+   sentencepiece
+
+    ```
 
 5.  **Fine-tune the Phi-2 Model (One-time setup):**
     *   **Prepare your dataset:** Create a `finance_qa.json` file in the `llm` directory. This file should contain a list of instruction-output pairs for training the model on financial Q&A.
