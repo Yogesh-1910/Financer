@@ -87,14 +87,13 @@ Follow these instructions to set up and run the project locally. You will need t
     ```
     ```
     pip install \
-   transformers>=4.57.0 \
-   accelerate>=1.10.0 \
-   datasets \
-   peft \
-   trl>=0.26.0 \
-   bitsandbytes \
-   sentencepiece
-
+    transformers>=4.57.0 \
+    accelerate>=1.10.0 \
+    datasets \
+    peft \
+    trl>=0.26.0 \
+    bitsandbytes \
+    sentencepiece
     ```
 
 5.  **Fine-tune the Phi-2 Model (One-time setup):**
